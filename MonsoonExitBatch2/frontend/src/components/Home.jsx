@@ -28,8 +28,8 @@ const Home = () => {
       <Grid container spacing={6}>
         {data.map((val, i) => (
           <Grid item xs={12} sm={6} md={4} key={i}>
-            <Card sx={{ display: "flex", flexDirection: "column" }}>
-              <CardContent>
+            <Card sx={{ display: "flex", flexDirection: "column", height: "100%" }}>
+              <CardContent sx={{ flexGrow: 1 }}>
                 <img
                   src={val.img_url}
                   className="img-fluid rounded-start"
